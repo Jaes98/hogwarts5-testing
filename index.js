@@ -38,7 +38,7 @@ async function createStudentWithNameParts() {
     result.fullName === "Peter Heronimous Lind") {
     console.log(`✅ Student created with name parts`);
   } else {
-    console.error(`❌ Student was not created with name parts`);
+    console.error(`❌ Student1 was not created with name parts`);
     console.error(result);
   }
 }
@@ -69,7 +69,7 @@ async function createStudentWithFullName() {
     result.schoolYear === 7 ) {
     console.log(`✅ Student created with full name`);
   } else {
-    console.error(`❌ Student was not created with full name`);
+    console.error(`❌ Student2 was not created with full name`);
     console.error(result);
   }
 }
@@ -101,7 +101,7 @@ async function createTeacherWithNameParts() {
     result.house === "Slytherin" ) {
     console.log(`✅ Teacher created with name parts`);
   } else {
-    console.error(`❌ Teacher was not created with name parts`);
+    console.error(`❌ Teacher1 was not created with name parts`);
     console.error(result);
   }
 }
@@ -117,6 +117,7 @@ async function createTeacherWithFullName() {
     {
       name: "Minerva McGonagall",
       house: "Gryffindor",
+      mainSubject: "Transfiguration",
       schoolYear: 47,
     }
   ),
@@ -128,10 +129,11 @@ async function createTeacherWithFullName() {
     result.middleName === null && 
     result.lastName === "McGonagall" && 
     result.fullName === "Minerva McGonagall" &&
+    result.mainSubject === "Transfiguration" &&
     result.house === "Gryffindor" ) {
     console.log(`✅ Teacher created with full name`);
   } else {
-    console.error(`❌ Teacher was not created with full name`);
+    console.error(`❌ Teacher2 was not created with full name`);
     console.error(result);
   }
 }
